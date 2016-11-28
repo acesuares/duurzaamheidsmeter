@@ -1,5 +1,5 @@
 # duurzaamheidsmeter
-Archief van de Duurzaamheidsmeter, zie www.duurzamheidsmeter.nl
+Archief van de Duurzaamheidsmeter, zie www.duurzaamheidsmeter.nl
 
 VARIOUS PARTS HAVE VARIOUS LICENSES! ESPECIALLY THE DATA FORM GEODAN CAN ONLY BE USED IF YOU HAVE THEIR LICENSE!
 
