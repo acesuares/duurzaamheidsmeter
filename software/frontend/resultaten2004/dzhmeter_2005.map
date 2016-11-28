@@ -1,0 +1,163 @@
+MAP
+# mapfile for Duurzaamheidsmeter 2003/2005
+NAME dzhmeter_2004
+STATUS ON
+SIZE 450 500 
+EXTENT 0 280000 290000 622500
+UNITS METERS
+IMAGECOLOR 208 231 189 
+SHAPEPATH "/www/www.duurzaamheidsmeter.nl/maps2004/data"
+SYMBOLSET "/www/www.duurzaamheidsmeter.nl/maps2004/etc/symbols.sym"
+FONTSET "/www/www.duurzaamheidsmeter.nl/maps2004/etc/fonts.txt"
+
+OUTPUTFORMAT
+	NAME "png"
+	DRIVER "GD/PNG"
+	MIMETYPE "image/png"
+  EXTENSION "png"
+END
+
+OUTPUTFORMAT
+	NAME imagemap
+	DRIVER imagemap
+	MIMETYPE "text/html"
+  EXTENSION "html"
+END
+#
+# Start of web interface definition
+#
+WEB
+  MINSCALE 236220.6
+  MAXSCALE 2125985.4
+#
+# On Windows systems, /tmp and /tmp/ms_tmp/ should be created at the root 
+# of the drive where the .MAP file resides.
+#
+  IMAGEPATH "/tmp/dzhmeter-maps/" 
+  IMAGEURL "/dzhmeter-maps/"
+  LOG "/tmp/dzhmetermap.log"
+END
+
+LEGEND
+	STATUS EMBED
+	POSITION UL
+	TRANSPARENT ON
+	OUTLINECOLOR 172 194 201
+END
+
+QUERYMAP
+	STATUS ON
+  STYLE HILITE
+  COLOR 255 0 0
+END
+
+# gemeente namen
+LAYER
+  NAME gemeentenamen
+  TYPE ANNOTATION
+  STATUS OFF
+  DATA Nlge_r052
+	LABELITEM "GEMNAAM"
+  CLASS
+    LABEL
+      COLOR  0 0 0
+      FONT fritqat
+      TYPE truetype
+      SIZE 7
+			BUFFER 2
+      POSITION CC
+			FORCE TRUE
+      PARTIALS TRUE
+      OUTLINECOLOR -1 -1 -1 
+    END
+  END
+END # layer
+
+# score layers.
+LAYER
+  NAME score1
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+		NAME "score 1 - 20 %"
+		COLOR 255 0 0
+  END
+END # layer
+LAYER
+  NAME score2
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+    NAME "score 21 - 40 %"
+		COLOR 255 0 0
+  END
+END # layer
+LAYER
+  NAME score3
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+    NAME "score 41 - 60 %"
+		COLOR 255 0 0
+  END
+END # layer
+LAYER
+  NAME score4
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+    NAME "score 61 - 80 %"
+		COLOR 255 0 0
+  END
+END # layer
+LAYER
+  NAME score5
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+    NAME "score 81 - 100 %"
+		COLOR 255 0 0
+  END
+END # layer
+# all gemeentes
+LAYER
+  NAME all
+  TYPE POLYGON
+	TEMPLATE "junk.html"
+  STATUS OFF
+	TOLERANCE 0
+	TOLERANCEUNITS pixels 
+  DATA Nlge_r052
+END # layer
+
+# these must be here because of the order in which things are drawn
+# gemeente grenzen.
+LAYER
+	NAME "gemeentegrenzen"
+  TYPE LINE
+  STATUS ON
+  DATA Nlge_r052
+  CLASS
+		COLOR 172 194 201
+  END
+END # layer
+
+  
+
+# geselecteerde gemeente
+LAYER
+	NAME "selected"
+  TYPE LINE
+  STATUS OFF
+  DATA Nlge_r052
+  CLASS
+		COLOR 0 0 0
+  END
+END # layer
+
+END # Map File

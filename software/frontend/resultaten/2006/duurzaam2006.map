@@ -1,0 +1,165 @@
+MAP
+# mapfile for Duurzaamheidsmeter 2006/2007
+NAME dzhmeter_2006
+STATUS ON
+SIZE 450 500 
+EXTENT 0 280000 290000 622500
+UNITS METERS
+#IMAGECOLOR 208 231 189 #D0E7BD
+IMAGECOLOR 249 235 199 #F9EBC7
+SHAPEPATH "/www/geodan-data"
+SYMBOLSET "/www/mapserver-fonts/symbols.sym"
+FONTSET "/www/mapserver-fonts/fonts.txt"
+
+OUTPUTFORMAT
+	NAME "png"
+	DRIVER "GD/PNG"
+	MIMETYPE "image/png"
+  EXTENSION "png"
+END
+
+OUTPUTFORMAT
+	NAME imagemap
+	DRIVER imagemap
+	MIMETYPE "text/html"
+  EXTENSION "html"
+END
+#
+# Start of web interface definition
+#
+WEB
+  MINSCALE 236220.6
+  MAXSCALE 2125985.4
+#
+# On Windows systems, /tmp and /tmp/ms_tmp/ should be created at the root 
+# of the drive where the .MAP file resides.
+#
+  IMAGEPATH "/tmp/www.duurzaamheidsmeter.nl/maps/" 
+  IMAGEURL "/maps/"
+  LOG "/tmp/www.duurzaamheidsmeter.nl/map.log"
+END
+
+LEGEND
+	STATUS EMBED
+	POSITION UL
+	TRANSPARENT ON
+	OUTLINECOLOR 172 194 201
+END
+
+QUERYMAP
+	STATUS ON
+  STYLE HILITE
+  COLOR 255 0 0
+END
+
+# gemeente namen
+LAYER
+  NAME gemeentenamen
+  TYPE ANNOTATION
+  STATUS OFF
+  DATA Nlge_r06
+	LABELITEM "GEMNAAM"
+  CLASS
+    LABEL
+      COLOR  0 0 0
+      FONT fritqat
+      TYPE truetype
+      SIZE 7
+			BUFFER 2
+      POSITION CC
+			FORCE TRUE
+      PARTIALS TRUE
+      OUTLINECOLOR -1 -1 -1 
+    END
+  END
+END # layer
+# provincie namen
+LAYER
+  NAME provincienamen
+  TYPE ANNOTATION
+  STATUS OFF
+  DATA Nlpr_r06
+	LABELITEM "PROVC_NM"
+  CLASS
+    LABEL
+      COLOR  0 0 0
+      FONT fritqat
+      TYPE truetype
+      SIZE 7
+			BUFFER 2
+      POSITION CC
+			FORCE TRUE
+      PARTIALS TRUE
+      OUTLINECOLOR -1 -1 -1 
+    END
+  END
+END # layer
+
+# score layers.
+LAYER
+  NAME scoregemeente
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlge_r06
+  CLASS
+		NAME "placeholder"
+		COLOR 0 0 0
+  END
+END # layer
+LAYER
+  NAME scoreprovincie
+  TYPE POLYGON
+  STATUS OFF
+  DATA Nlpr_r06
+  CLASS
+		NAME "placeholder"
+		COLOR 0 0 0
+  END
+END # layer
+# all (for selecting)
+LAYER
+  NAME all
+  TYPE POLYGON
+	TEMPLATE "junk.html"
+  STATUS OFF
+	TOLERANCE 0
+	TOLERANCEUNITS pixels 
+  DATA Nlge_r06
+END # layer
+# these must be here because of the order in which things are drawn
+# gemeente grenzen.
+LAYER
+	NAME "gemeentegrenzen"
+  TYPE LINE
+  STATUS ON
+  DATA Nlge_r06
+  CLASS
+		COLOR 172 194 201
+  END
+END # layer
+
+# these must be here because of the order in which things are drawn
+# gemeente grenzen.
+LAYER
+	NAME "provinciegrenzen"
+  TYPE LINE
+  STATUS OFF
+  DATA Nlpr_r06
+  CLASS
+		COLOR 250 144 151
+  END
+END # layer
+  
+
+# geselecteerde gemeente
+LAYER
+	NAME "selected"
+  TYPE LINE
+  STATUS OFF
+  DATA Nlge_r06
+  CLASS
+		COLOR 0 0 0
+  END
+END # layer
+
+END # Map File

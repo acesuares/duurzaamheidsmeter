@@ -1,0 +1,253 @@
+<?
+
+	// chooser_bar.inc
+
+	// outer table
+
+	$chooser_out .= "<TABLE WIDTH=780 BGCOLOR=\"#FFFFFF\" CELLPADDING=0 CELLSPACING=0 BORDER=0>\n";
+
+// vragen
+	$chooser_out .= "<TR>\n";
+
+	// spacer
+	$chooser_out .= "<TD WIDTH=20% BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "&nbsp;";
+	$chooser_out .= "</TD>\n";
+
+	$chooser_out .= "<TD COLSPAN=4>\n";
+
+	$chooser_out .= "<TABLE WIDTH=100% CELLPADDING=4 CELLSPACING=0 BORDER=0>\n";
+	$chooser_out .= "<TR>\n";
+	$chooser_out .= "<TD ALIGN=RIGHT VALIGN=TOP BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "<FORM ACTION=$PHP_SELF METHOD=GET>\n";
+	$chooser_out .= "<INPUT TYPE=HIDDEN NAME=\"spiegel\" VALUE=\"vraag\">\n";
+
+	$chooser_out .= "<SELECT NAME=\"choice\" SIZE=\"1\" style=\"width: 678px; background-color:#ffffff;font-size:10px;font-family:verdana;color:#333;\" ONCHANGE=\"form.submit()\">\n";
+
+	$chooser_out .= "<OPTION>Kies een vraag...";
+
+	$query  = "SELECT ";
+	$query .= " V.id ,V.title AS vraag, I.title AS indicator ";
+	$query .= "FROM ";
+	$query .= " vraag V, indicator I ";
+	$query .= "WHERE ";
+	$query .= " V.active='Y' AND ";
+	$query .= " V.indicator_id=I.id ";
+	$query .= "ORDER BY ";
+	$query .= " V.name ";
+
+	$result=mysql($WebEngine_database,$query);
+	while($row = mysql_fetch_object($result)):
+		$chooser_out .= "<OPTION VALUE=\"" . $row->id . "\" ";
+		$chooser_out .= ">";
+		$chooser_out .= substr( stripslashes( $row->indicator ) . ": " . stripslashes( $row->vraag ), 0 , 100 ) . "...";
+		$chooser_out .= "\n";
+	endwhile;
+
+	$chooser_out .= "</SELECT>\n";
+
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "<INPUT TYPE=SUBMIT VALUE=\">\" style=\"font-size:10px;\">";
+	$chooser_out .= "</FORM>";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "</TR>\n";
+	$chooser_out .= "</TABLE>\n";
+
+	$chooser_out .= "</TD>\n";
+
+	// spacer
+	$chooser_out .= "<TD WIDTH=20% BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "&nbsp;";
+	$chooser_out .= "</TD>\n";
+	
+	$chooser_out .= "</TR>\n";
+
+
+// overzicht, gemeente, etc
+	$chooser_out .= "<TR>\n";
+
+	$chooser_out .= "<TD WIDTH=20% BGCOLOR=\"#".$bgcolor["overzicht"]."\">\n";
+	$chooser_out .= "&nbsp;";
+	$chooser_out .= "</TD>\n";
+
+	$chooser_out .= "<TD>\n";
+
+	// overzicht
+
+	$chooser_out .= "<TABLE CELLPADDING=4 CELLSPACING=0 BORDER=0>\n";
+	$chooser_out .= "<TR>\n";
+	$chooser_out .= "<TD ALIGN=RIGHT VALIGN=TOP BGCOLOR=\"#".$bgcolor["overzicht"]."\">\n";
+	$chooser_out .= "<FORM ACTION=$PHP_SELF METHOD=GET>\n";
+	$chooser_out .= "<INPUT TYPE=HIDDEN NAME=\"spiegel\" VALUE=\"overzicht\">\n";
+
+	$chooser_out .= "<SELECT NAME=\"choice\" SIZE=\"1\" style=\"width:140px; background-color:#ffffff;font-size:10px;font-family:verdana;color:#333;\" ONCHANGE=\"form.submit()\">\n";
+
+	$chooser_out .= "<OPTION>of een kaart...";
+	$chooser_out .= "<OPTION VALUE=\"totaaloverzicht\">totaaloverzicht";
+	$chooser_out .= "<OPTION VALUE=\"totaalkaart\">totaal kaart";
+	$chooser_out .= "<OPTION VALUE=\"kl_20032005\">klimaat &amp; water";
+	$chooser_out .= "<OPTION VALUE=\"rg_20032005\">duurzaam &amp; ondernemen";
+	$chooser_out .= "<OPTION VALUE=\"so_20032005\">sociaal &amp; mondiaal";
+
+	$chooser_out .= "</SELECT>\n";
+
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=\"#".$bgcolor["overzicht"]."\">\n";
+	$chooser_out .= "<INPUT TYPE=SUBMIT VALUE=\">\" style=\"font-size:10px;\">";
+	$chooser_out .= "</FORM>";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "</TR>\n";
+	$chooser_out .= "</TABLE>\n";
+
+	$chooser_out .= "</TD>\n";
+
+	// provincies
+
+	$chooser_out .= "<TD>\n";
+
+	$query  = "SELECT ";
+	$query .= " id,name ";
+	$query .= "FROM ";
+	$query .= " provincie ";
+//	$query .= "WHERE ";
+//	$query .= " active='Y' ";
+	$query .= "ORDER BY ";
+	$query .= " name ";
+
+	$result=mysql($WebEngine_database,$query);
+
+	$chooser_out .= "<TABLE CELLPADDING=4 CELLSPACING=0 BORDER=0>\n";
+	$chooser_out .= "<TR>\n";
+	$chooser_out .= "<TD ALIGN=RIGHT VALIGN=TOP BGCOLOR=\"#".$bgcolor["provincie"]."\">\n";
+	$chooser_out .= "<FORM ACTION=$PHP_SELF METHOD=GET>\n";
+	$chooser_out .= "<INPUT TYPE=HIDDEN NAME=\"spiegel\" VALUE=\"provincie\">\n";
+	$chooser_out .= "<SELECT NAME=\"choice\" SIZE=\"1\" style=\"width:128px; background-color:#ffffff;font-size:10px;font-family:verdana;color:#333;\" ONCHANGE=\"form.submit()\">\n";
+	$chooser_out .= "<OPTION>of een provincie...";
+
+	while($row = mysql_fetch_assoc($result)):
+		$id=$row["id"];
+		$name=stripslashes($row["name"]);
+
+		$chooser_out .= "<OPTION VALUE=\"$id\" ";
+		$chooser_out .= ">$name\n";
+
+	endwhile;
+
+	$chooser_out .= "</SELECT>\n";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=\"#".$bgcolor["provincie"]."\">\n";
+	$chooser_out .= "<INPUT TYPE=SUBMIT VALUE=\">\" style=\"font-size:10px;\">";
+	$chooser_out .= "</FORM>";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "</TR>\n";
+	$chooser_out .= "</TABLE>\n";
+
+
+	$chooser_out .= "</TD>\n";
+
+	
+	// gemeentes (alleen die vragen beantwoord hebben)
+
+	$chooser_out .= "<TD>\n";
+
+	$query  = "SELECT ";
+	$query .= " G.id,G.name ";
+	$query .= "FROM ";
+	$query .= " gemeente G, gemeente2vraag G2V ";
+	$query .= "WHERE ";
+	$query .= " G2V.gemeente_id = G.id ";
+	$query .= "GROUP BY ";
+	$query .= " G.id ";
+	$query .= "ORDER BY ";
+	$query .= " G.name ";
+
+	$result=mysql($WebEngine_database,$query);
+
+	$chooser_out .= "<TABLE CELLPADDING=4 CELLSPACING=0 BORDER=0>\n";
+	$chooser_out .= "<TR>\n";
+	$chooser_out .= "<TD ALIGN=RIGHT VALIGN=TOP BGCOLOR=\"#".$bgcolor["gemeente"]."\">\n";
+	$chooser_out .= "<FORM ACTION=$PHP_SELF METHOD=GET>\n";
+	$chooser_out .= "<INPUT TYPE=HIDDEN NAME=\"spiegel\" VALUE=\"gemeente\">\n";
+	$chooser_out .= "<SELECT name=\"choice\" size=\"1\" style=\"width:170px; background-color:#ffffff;font-size:10px;font-family:verdana;color:#333;\" ONCHANGE=\"form.submit()\">\n";
+	$chooser_out .= "<OPTION>of een gemeente...";
+
+	while($row = mysql_fetch_assoc($result)):
+		$id=$row["id"];
+		$name=stripslashes($row["name"]);
+
+		$chooser_out .= "<OPTION VALUE=\"$id\" ";
+		$chooser_out .= ">$name\n";
+
+	endwhile;
+
+	$chooser_out .= "</SELECT>\n";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=\"#".$bgcolor["gemeente"]."\">\n";
+	$chooser_out .= "<INPUT TYPE=SUBMIT VALUE=\">\" style=\"font-size:10px;\">";
+	$chooser_out .= "</FORM>";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "</TR>\n";
+	$chooser_out .= "</TABLE>\n";
+
+
+	$chooser_out .= "</TD>\n";
+
+
+	// indicatoren
+
+	$chooser_out .= "<TD>\n";
+
+	$query  = "SELECT ";
+	$query .= " id,title AS name ";
+	$query .= "FROM ";
+	$query .= " indicator ";
+	$query .= "WHERE ";
+	$query .= " id <> 8  "; // home
+	$query .= " AND active='Y' ";
+	$query .= "ORDER BY ";
+	$query .= " name ";
+
+	$result=mysql($WebEngine_database,$query);
+
+	$chooser_out .= "<TABLE CELLPADDING=4 CELLSPACING=0 BORDER=0>\n";
+	$chooser_out .= "<TR>\n";
+	$chooser_out .= "<TD ALIGN=RIGHT VALIGN=TOP BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "<FORM ACTION=$PHP_SELF METHOD=GET>\n";
+	$chooser_out .= "<INPUT TYPE=HIDDEN NAME=\"spiegel\" VALUE=\"indicator\">\n";
+	$chooser_out .= "<SELECT name=\"choice\" size=\"1\" style=\"width:150px; background-color:#ffffff;font-size:10px;font-family:verdana;color:#333;\" ONCHANGE=\"form.submit()\">\n";
+	$chooser_out .= "<OPTION>of een indicator...";
+
+	while($row = mysql_fetch_assoc($result)):
+		$id=$row["id"];
+		$name=strtolower(stripslashes($row["name"]));
+
+		$chooser_out .= "<OPTION VALUE=\"$id\" ";
+		$chooser_out .= ">$name\n";
+
+	endwhile;
+
+	$chooser_out .= "</SELECT>\n";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "<INPUT TYPE=SUBMIT VALUE=\">\" style=\"font-size:10px;\">";
+	$chooser_out .= "</FORM>";
+	$chooser_out .= "</TD>\n";
+	$chooser_out .= "</TR>\n";
+	$chooser_out .= "</TABLE>\n";
+
+
+	$chooser_out .= "</TD>\n";
+
+	$chooser_out .= "<TD WIDTH=20% BGCOLOR=\"#".$bgcolor["indicator"]."\">\n";
+	$chooser_out .= "&nbsp;";
+	$chooser_out .= "</TD>\n";
+	
+	$chooser_out .= "</TR>\n";
+
+	
+	$chooser_out .= "</TABLE>\n";
+
+  $html_out = $chooser_out . $html_out;
+
+?>
