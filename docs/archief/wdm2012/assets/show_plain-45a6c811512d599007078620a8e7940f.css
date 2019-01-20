@@ -1,0 +1,253 @@
+/*
+    Document   : vragenlijsten
+    Created on : Feb 13, 2011, 10:00:55 AM
+    Author     : ace, rianne
+    Description:
+        Make this site nice.
+*/
+
+
+@media screen {
+    /* style sheet for screen goes here */
+
+    /* general stuff */
+    html {
+        background-color: #fff; /* this is where you can set the background outside the body */
+    }
+
+    body {
+        margin: 0;
+        border: 0;
+        font-family: verdana, sans-serif; /* geen verdana please! */
+        font-size: 0.8em; /* this makes 1em = 10px */
+        width: 770px; /* 900 px */
+        background-color: #fff;
+        padding: 0.2em 10px 2em 10px;
+        color:#000000;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #waterships {
+        border:0px;
+    }
+
+    #waterships a {
+        text-decoration: none;
+        color:#449a01;
+        font-weight:bold;
+    }
+    #waterships #watership_data{
+        margin:2em 0 2em 0em;
+        padding:2em 3em 2em 3em;
+        background-color:#cedbdc;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        line-height:170%;
+    }
+
+    #waterships #watership_data h1{
+        margin:0;
+        padding:0 0 10px 0;
+        font-size:140%;
+    }
+
+    #waterships #watership_data ul{
+        margin:0;
+        padding:0 0 10px 0;
+        font-size:120%;
+    }
+
+    #waterships .topic {
+        border:0px solid green;
+        margin: 40px 0 20px 0;
+        padding:0px;
+        height:auto;
+        font-size:100%;
+    }
+
+    #waterships .topic h1 .topic_title {
+        text-transform: uppercase;
+        color:#006bae;
+        text-shadow: 0px 0px #000000;
+        padding: 0.8em 0 0 0;
+        margin:0;
+    }
+
+    #waterships .topic_description {
+        margin:0 0px 1em 0px;
+        font-style:normal;
+        font-weight:normal;
+        padding-right: 1em;
+    }
+
+    #waterships .topic .topic_description h1{
+        text-transform: none;
+        color:#000000;
+        margin: 2em 0 1em 0;
+        padding: 0;
+        font-size:120%;
+    }
+
+    #waterships .topic_description  p{
+        margin:0;
+        padding:0;
+    }
+
+    #waterships .topic_description ul, #thanks .topic_description ol{
+        margin:1em;
+        padding:0;
+    }
+
+    #waterships .topic_description ul{
+        list-style-type:square;
+        margin:0.7 0 0 1em;
+        padding:0;
+    }
+
+    #waterships .topic_description ol{
+        margin:0.7em 0 0 1.5em;
+        padding:0;
+    }
+
+    #waterships .topic_description p a{
+        color: #4190c3;
+        font-weight:bold;
+        text-decoration:none;
+    }
+
+    #waterships .topic_description p a:hover{
+        font-style:italic;
+    }
+    #waterships .topic h1 {
+        text-transform: uppercase;
+        font-size: 1.6em;
+        color:#006bae;
+        text-shadow: 0px 0px #000000;
+        padding: 0.8em 0 0 0;
+
+    }
+
+    #waterships .topic_score{
+        display:block;
+        color:#006bae;
+        padding: 20px 0 20px 0;
+    }
+    
+    
+     #waterships .topic_score .topic_score_lead {
+       width: 540px;
+       float: left;
+     }
+
+     #waterships .topic_score .topic_score_score {
+       width: 80px;
+       float: left;
+       text-align: right;
+     }
+
+    #waterships .indicator_score {
+        font-weight:bold;
+        padding: 10px 0 10px 0;
+        font-size:120%;
+    }
+
+    #waterships .indicator_title {
+        font-weight:bold;
+        font-size: 170%;
+        padding: 10px 0 10px 0;
+    }
+
+    /* waterships questions */
+
+    #waterships .question {
+        padding:0 0 5px 15px;
+        margin:15px 0 0 0px;
+        width: 755px;
+        font-size: 110%;
+    }
+
+    #waterships .question .question_header_lead {
+        width: 510px;
+        font-size: 110%;
+        float: left;
+        margin-right: 40px;
+    }
+
+    #waterships .question .question_header {
+        text-align: center;
+        width: 80px;
+        font-size: 110%;
+        float: left;
+        margin-bottom: 9px;
+    }
+
+    #waterships .question .question_title{
+        width:510px;
+        float:left;
+        font-weight:bold;
+        margin-right: 40px;
+    }
+
+    #waterships .question .question_score{
+        width: 20px;
+        text-align:right;
+        float:left;
+        font-size: 80%;
+    }
+
+    #waterships .question .question_human_readable_answer{
+        width:60px;
+        text-align:left;
+        float:left;
+        font-size: 80%;
+        color: darkgray;
+    }
+
+    #waterships .subquestion {
+        margin:5px 0;
+        padding:0 15px 11px 15px;
+        margin:0 0 0 30px;
+        width: 715px;
+        font-size: 110%;
+    }
+
+    #waterships .subquestion .subquestion_title{
+        width:480px;
+        float:left;
+        margin-right: 40px;
+    }
+
+    #waterships .subquestion .subquestion_score{
+        width:20px;
+        text-align:right;
+        float:left;
+        font-size: 80%;
+    }
+
+    #waterships .subquestion .subquestion_human_readable_answer{
+        width: 60px;
+        text-align:left;
+        float:left;
+        font-size: 80%;
+        color: darkgray;
+    }
+
+    #waterships .topic_score{
+        display:block;
+        color:#006bae;
+        padding: 20px 0 20px 0;
+        font-size:100%;
+    }
+
+    #waterships .indicator_score {
+        font-weight:bold;
+        padding: 10px 0 10px 0;
+        font-size:140%;
+    }
+
+
+  
+}

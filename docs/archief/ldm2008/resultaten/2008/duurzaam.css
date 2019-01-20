@@ -1,0 +1,1221 @@
+@media screen {
+
+html { overflow-y: scroll !important; }
+body { margin: 0px;
+   padding: 0px;
+   background-color: #F4F5F5;
+   text-align: center; }
+a { text-decoration: none; }
+a:link { color: white; }
+a:visited { color: white; }
+a:hover { color: gray; }
+a:active { color: black; }
+img { border: none; }
+.page-area { width: 780px;
+   border: none;
+   background-image: url(../../foto/58.gif);
+   background-color: #E6AD00;
+   margin-top: 5px;
+   margin-left: auto; 
+   margin-right: auto;
+   text-align: left;
+   text-transform: none;
+   white-space: normal;
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black; }
+.link-en-taal {
+  position: absolute;
+ z-index: 1;
+   width: 750px;
+   margin: 0px 0px 0px 0px;
+   text-align: right;
+   font: normal 11px Arial, Helvetica, sans-serif;
+   border: none;
+   padding: 10px 0px 0px 0px;
+   text-transform: none;
+   color: white; }
+.title-area { margin: 0px 0px 8px 0px;
+   font-size: 2em;
+   font: normal bold 32px Verdana, Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   border: 0px solid black;
+   padding: 62px 0px 0px 37px;
+   color: white; }
+.tab-area { margin: 0px;
+   font: bold small-caps 0.96em Arial, Helvetica, sans-serif;
+   background-image: url(../../foto/54.gif);
+   position: relative;
+   width: 770px;
+   border: 0px solid white;
+   padding: 0px 0px 0px 40px; }
+.tab-area ul { list-style: none;
+   margin: 0px;
+   border: none;
+   padding: 0px; }
+.tab-area li { 
+   display: inline;
+   white-space: normal;
+   font: bold small-caps 0.96em Arial, Helvetica, sans-serif;
+   text-align: left;
+   padding: 0px 5px 0px 0px; }
+.tab-selected a { color: red; }
+.tab-area a:hover {
+   overflow: visible;
+   position: relative;
+   color: black; }
+.tab-area a span {display: none;}
+.tab-area a:hover span { display: block;
+   position: absolute;
+   top: 20px; left: 5px;
+ z-index: 2;
+   width: 200px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 6px 3px 6px;
+   white-space: normal;
+   border: 1px solid #2A3972;
+   color: black;
+   background: #E9EEF5;
+   font: normal normal 11px Arial, Helvetica, sans-serif;
+   text-align: left; }
+.nav-help {
+   font: bold 1.2em Arial, Helvetica, sans-serif; 
+   text-transform: capitalize;
+   color: #2A3972;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 50px 0px 0px 40px; }
+.introductie-tekst {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0.5em 0px 0.8em 40px; }
+.dropdown { margin: 0px 0px 0px 0px;
+   width: 780px;
+   border: none;
+   padding: 0px 0px 0px 0px; }
+.dropdown select { 
+   margin: 5px 0px 15px 40px;
+   font: normal normal 0.7em Arial, Helvetica, sans-serif;
+   width: 700px; 
+   max-width: 700px;
+   float: left;
+   position: relative;
+   border: none;
+   background-color: #F3DA97;
+   padding: 0.1em 0.1em 0.1em 0px; }
+.dropdown input { margin: 0px;
+   margin: 5px 0px 0px 0px;
+   font: normal normal 10px Arial, Helvetica, sans-serif;
+   width: 19px;
+   height: 19px;
+   float: left;
+   position: relative;
+   border: none;
+   padding: 0.1em 0.1em 0.1em 0px; }
+.koptekst {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 0px 0.8em 40px; }
+.map-area-topdivider {
+   height: 38px; }
+.map-vraag {
+   margin: 0px 10px 0px 10px;
+   background-color: #F9EBC7;
+   clear: both;
+   height: 50px;
+   padding: 10px 0px 10px 32px;
+   font: bold 12px Arial, Helvetica, sans-serif; 
+   color: black; }
+.map-area { 
+   margin: 0px 10px 0px 10px;
+   background-color: #F9EBC7;
+   clear: both;
+   height: 508px;
+   padding: 0px 0px 0px 0px;
+   border: 0px solid black; }
+.map-large { border: none;
+   width: 450px;
+   position: relative;
+   float: left;
+   padding: 4px 0px 4px 0px;
+   margin: 0px; }
+.map-large-provincie { border: none;
+   margin: 0px;
+   width: 450px;
+   position: relative;
+   float: left;
+   padding: 4px 0px 4px 0px; }
+.map-zoom { width: 306px;
+   position: relative;
+   float: right;
+   border: none;
+   padding: 0px;
+   padding: 4px 4px 4px 0px; }
+.map-zoom img {
+   width: 306px; }
+.map-text {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif;
+   text-align: left;
+   width: 266px;
+   position: relative;
+   float: right;
+   border: none;
+   padding: 1.5em 40px 1em 0px;
+   margin: 0px ; }
+.intro {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0.5em 0px 0.8em 40px; }
+.gemeente-gegevens-gemeente { 
+   font-size: 0.8em;
+   text-align: left;
+   line-height: 1.3em;
+   width: 360px;
+   float: left;
+   position: relative;
+   border: none;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 0px 1.5em 40px; }
+.gemeente-gegevens-contact { 
+   font-size: 0.8em;
+   text-align: right;
+   line-height: 1.3em;
+   width: 358px;
+   float: right;
+   position: relative;
+   border: none;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 20px 1.5em 0px; }
+.gemeente-gegevens-description {
+   font-size: 0.72em;
+   text-align: left;
+   clear: both;
+   font-style: italic;
+   border: 1px solid #EFCD63;
+   margin: 20px 20px 10px 40px;
+   padding: 10px 20px 10px 20px; }
+.score { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: 1px solid #EFCD63;
+   clear: both;
+   margin: 0px 20px 20px 40px;
+   padding: 5px 20px 5px 20px; }
+.score-header-row { 
+   padding: 0px 0px 0px 0px; }
+.score-header-indicator {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 298px;
+   text-align: left; }
+.score-header-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-header-cfactor { 
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-header-scoreprocent {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-row { 
+   padding: 0px 0px 0px 0px; }
+.score-indicator {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 298px;
+   text-align: left; }
+.score-score {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-cfactor {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 120px;
+   text-align: right; }
+.score-scoreprocent {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.vl-title{
+   clear: both;
+   font: bold 1.2em Arial, Helvetica, sans-serif; 
+   color: #2A3972;
+   border: none;
+   text-align: left; 
+   margin: 0px 0px 0px 40px;
+   padding: 1em 0px 0px 0px; }
+.vragenlijst { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   position: relative;
+   margin: 10px 20px 0px 40px;
+   padding: 0px 0px 0px 0px; }
+.vl-header-vraagnummer {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.vl-header-vraag { 
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top; }
+.vl-header-jaofnee {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 77px;
+   text-align: right;
+   vertical-align: top; }
+.vl-header-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+.vl-vraagnummer{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.vl-vraag{
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top; }
+.vl-vraag a:hover {
+   border: 0px;
+   position: relative;
+   overflow: visible;
+   color: black; }
+.vl-vraag a span {display: none;
+   border: none:}
+.vl-vraag a:hover span { display: block;
+   position: absolute;
+   z-index: 3;
+   top: 33px; left: 150px;
+   width: 300px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 6px 3px 6px;
+   white-space: normal;
+   border: 1px solid #2A3972;
+   color: black;
+   background: #E9EEF5;
+   font: normal 0.85em Arial, Helvetica, sans-serif;
+   text-align: left; }
+
+.vl-jaofnee{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 77px;
+   text-align: right;
+   vertical-align: top; }
+.vl-score{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+
+.vl-ja{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top; }
+.vl-nee{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top; }
+.vl-maxscore-tekst{
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 20px 0px 20px 0px; }
+.vl-maxscore-score{
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 20px 0px 20px 0px; }
+
+.vl-totaalscore-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-totaalscore-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 10px 0px 5px 0px; }
+.vl-totaalscore-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 10px 0px 5px 0px;  }
+.vl-cfactor-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-cfactor-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.vl-cfactor-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px;  }
+.vl-cfactor-totaal-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-cfactor-totaal-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.vl-cfactor-totaal-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px;  }
+.vl-gecorr-totaal-row {  }
+.vl-gecorr-totaal-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px;}
+
+.vl-gecorr-totaal-tekst a:hover {
+   border: 0px;
+   position: relative;
+   color: black; }
+.vl-gecorr-totaal-tekst a span {display: none;}
+.vl-gecorr-totaal-tekst a:hover span { display: block;
+   position: absolute;
+ z-index: 4;
+   top: 23px; left: 150px;
+   width: 300px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 6px 3px 6px;
+   white-space: normal;
+   border: 1px solid #2A3972;
+   color: black;
+   background: #E9EEF5;
+   font: normal 0.85em Arial, Helvetica, sans-serif;
+   text-align: left; }
+
+.vl-gecorr-totaal-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px; }
+.vl-gecorr-totaal-procentteken {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 15px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px; }
+.vl-creden-tekst {
+   width: 530px;
+   font: italic normal 0.7em Arial, Helvetica, sans-serif;
+   text-align: left;
+   border: 1px solid #EFCD63;
+   padding: 0.5em; }
+.helptext {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0.5em 0px 0.8em 40px; }
+
+.invul-area { 
+   margin: 50px 20px 3px 40px; }
+.invul-help {
+   font: bold 13px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 14px 0px; }
+.invul-dropdown {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-invuller-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-invuller {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-header {
+   width: 170px;
+   font: bold 12px Arial, Helvetica, sans-serif; }
+.invul-inputtext {
+   font: normal 12px Arial, Helvetica, sans-serif; }
+.invul-contactambtenaar-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-contactambtenaar {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-correctie-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-correctiefactor {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-submit {
+   position: relative;
+   float: right;
+   font: bold 12px Arial, Helvetica, sans-serif;
+   margin: 20px 30px 0px 0px; }
+.invul-submit-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.mail-melding { 
+   font: bold 13px Arial, Helvetica, sans-serif;
+   color: white;
+   margin: 40px;
+   border 1px solid black;
+   clear: both; }
+.invulfout { 
+   font: normal 13px Arial, Helvetica, sans-serif;
+   margin: 40px;
+   border 1px solid black;
+   clear: both; }
+H1 { 
+   color: black;
+   font: bold 13px Arial, Helvetica, sans-serif; }
+H2 { 
+   color: black;
+   font: bold 13px Arial, Helvetica, sans-serif; }
+
+.ranglijst { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   clear: both;
+   width: 728px;
+   margin: 20px 0px 0px 40px;
+   padding: 0px 0px 0px 0px; }
+.ranglijst td {
+   padding: 0px 4px 0px 4px; 
+   border: 1px solid #EFCD63;
+   vertical-align: middle; }
+.rang-gem-nummer{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.rang-gem-naam{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 210px;
+   text-align: left;
+   vertical-align: top; }
+.rang-gem-balkje{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 230px;
+   text-align: left;
+   vertical-align: top; }
+.rang-gem-score{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+
+.lijstje-provincie {
+   font: normal normal 1em Arial, Helvetica, sans-serif;
+   text-align: left;
+   width: 270px;
+   position: relative;
+   float: left;
+   border: none;
+   padding: 0px 0px 0px 0px;
+   margin: 20px 0px 0px 0px; }
+.prov_naam {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 140px;
+   text-align: left;
+   white-space: nowrap;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.prov_score {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 80px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.prov_deelname {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 80px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.prov_onbekend {
+   font: italic 0.7em Arial, Helvetica, sans-serif; 
+   color: black;
+   text-align: center;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.provincie-gegevens { 
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   margin: 0px 20px 0px 0px;
+   padding: 1.5em 0px 1.5em 40px; }
+.credit-area {
+   clear: both;
+   font: normal normal 0.7em Arial, Helvetica, sans-serif; 
+   line-height: 1.3em;
+   color: white;
+   border: 0px dotted olive;
+   white-space: nowrap;
+   text-align: right; 
+   text-transform: none;
+   padding: 45px 0px 25px 0px;
+   margin: 0px 20px 0px 0px; }
+.credit-area a { color: white; }
+.credit-area a:hover { color: red; }
+
+.gemeentelinks {
+  width: 45%;
+  font-size: smaller;
+  float: left; }
+.gemeentelinks ul {
+  list-style: none; }
+
+.antwoord-gemeentes {
+  width: 30%;
+  font-size: smaller;
+  float: left; }
+.antwoord-gemeentes ul {
+  list-style: none; }
+
+}
+
+
+
+
+
+
+
+@media print {
+
+body { margin: 0px;
+   padding: 0px;
+   text-align: center; }
+a { text-decoration: none; }
+a:link { color: black; }
+a:visited { color: black; }
+a:hover { color: gray; }
+a:active { color: black; }
+img { border: none; }
+.page-area { width: 780px;
+   border: none;
+   margin: 5px;
+   margin-left: auto; 
+   margin-right: auto;
+   text-align: left;
+   text-transform: none;
+   white-space: normal;
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black; }
+.link-en-taal { 
+   display: none; }
+.title-area { margin: 0px 0px 0.5em 0px;
+   font-size: 2em;
+   font: normal bold 2em Verdana, Arial, Helvetica, sans-serif;
+   text-transform: capitalize;
+   border: 0px solid black;
+   padding: 0.6em 0em 0em 0px;
+   color: black; }
+.tab-area { 
+   display: none; }
+.nav-help {
+   font: bold 1.2em Arial, Helvetica, sans-serif; 
+   text-transform: capitalize;
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0em 0px 0em 0px; }
+.introductie-tekst {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0.5em 0px 0.8em 0px; }
+.dropdown { 
+   display: none; }
+.map-area-topdivider {
+   height: 38px; }
+.map-vraag {
+   margin: 0px 10px 0px 0px;
+   background-color: #F9EBC7;
+   clear: both;
+  width: 728px;
+   height: 50px;
+   padding: 10px 0px 10px 0px;
+   font: bold 13px Arial, Helvetica, sans-serif; 
+   color: black; }
+.map-area { margin: 0.3em 10px 0px 0px;
+   clear: both;
+   width: 760px;
+   height: 504px;
+   padding: 0px 0px 0px 0px;
+   border: 0px solid black; }
+.map-large { border: none;
+   width: 450px;
+   position: relative;
+   float: left;
+   padding: 4px 0px 0px 0px;
+   margin: 0px; }
+.map-large-provincie { border: none;
+   margin: 0px;
+   width: 450px;
+   position: relative;
+   float: left;
+   padding: 4px 0px 0px 0px; }
+.map-zoom { width: 306px;
+   position: relative;
+   float: right;
+   border: none;
+   padding: 4px 0px 0px 0px;
+   margin: 0px; }
+.map-zoom img {
+   width: 306px; }
+.map-text {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif;
+   text-align: left;
+   width: 266px;
+   position: relative;
+   float: right;
+   border: none;
+   padding: 1.5em 40px 1em 0px;
+   margin: 0px ; }
+.gemeente-gegevens-gemeente { 
+   font-size: 0.8em;
+   text-align: left;
+   line-height: 1.3em;
+   width: 360px;
+   float: left;
+   position: relative;
+   border: none;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 0px 1.5em 0px; }
+.gemeente-gegevens-contact { 
+   font-size: 0.8em;
+   text-align: right;
+   line-height: 1.3em;
+   width: 358px;
+   float: left;
+   position: relative;
+   border: none;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 20px 1.5em 0px; }
+.gemeente-gegevens-description {
+   font-size: 0.72em;
+   text-align: left;
+   clear: both;
+   width: 678px;
+   font-style: italic;
+   border: 1px solid black;
+   margin: 20px 0px 10px 0px;
+   padding: 10px 20px 10px 20px; }
+.score { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: 1px solid black;
+   clear: both;
+   width: 678px;
+   margin: 0px 0px 20px 0px;
+   padding: 5px 20px 5px 20px; }
+.score-header-row { 
+   padding: 0px 0px 0px 0px; }
+.score-header-indicator {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 298px;
+   text-align: left; }
+.score-header-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-header-cfactor { 
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-header-scoreprocent {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-row { 
+   padding: 0px 0px 0px 0px; }
+.score-indicator {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 298px;
+   text-align: left; }
+.score-score {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.score-cfactor {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 120px;
+   text-align: right; }
+.score-scoreprocent {
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 120px;
+   text-align: right; }
+.vl-title{
+   clear: both;
+   font: bold 1.0em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   text-align: left; 
+   margin: 0px 0px 0px 0px;
+   padding: 1em 0px 0px 0px; }
+.vragenlijst { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   position: relative;
+   width: 728px;
+   margin: 10px 0px 0px 0px;
+   padding: 0px 0px 0px 0px; }
+.vl-header-vraagnummer {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.vl-header-vraag { 
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top; }
+.vl-header-jaofnee {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 77px;
+   text-align: right;
+   vertical-align: top; }
+.vl-header-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+.vl-vraagnummer{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.vl-vraag{
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 530px;
+   text-align: left;
+   vertical-align: top; }
+
+.vl-vraag a:hover {
+   border: 0px;
+   position: relative;
+   color: black; }
+.vl-vraag a span {display: none;}
+.vl-vraag a:hover span { display: block;
+   position: absolute;
+   clear: both;
+   top: 33px; left: 150px;
+   width: 300px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 6px 3px 6px;
+   white-space: normal;
+   border: 1px solid #2A3972;
+   color: black;
+   background: #E9EEF5;
+   font: normal 0.85em Arial, Helvetica, sans-serif;
+   text-align: left; }
+
+.vl-jaofnee{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 77px;
+   text-align: right;
+   vertical-align: top; }
+.vl-score{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+
+.vl-ja{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top; }
+.vl-nee{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top; }
+.vl-maxscore-tekst{
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 20px 0px 20px 0px; }
+.vl-maxscore-score{
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 20px 0px 20px 0px; }
+
+.vl-totaalscore-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-totaalscore-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 10px 0px 5px 0px; }
+.vl-totaalscore-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 10px 0px 5px 0px;  }
+.vl-cfactor-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-cfactor-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.vl-cfactor-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px;  }
+.vl-cfactor-totaal-row { 
+   padding: 0px 0px 0px 0px; }
+.vl-cfactor-totaal-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.vl-cfactor-totaal-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px;  }
+.vl-gecorr-totaal-row {  }
+.vl-gecorr-totaal-tekst {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 530px;
+   text-align: left;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px;}
+
+.vl-gecorr-totaal-tekst a:hover {
+   border: 0px;
+   position: relative;
+   color: black; }
+.vl-gecorr-totaal-tekst a span {display: none;}
+.vl-gecorr-totaal-tekst a:hover span { display: block;
+   position: absolute;
+   clear: both;
+   top: 23px; left: 150px;
+   width: 300px;
+   margin: 0px 0px 0px 0px;
+   padding: 3px 6px 3px 6px;
+   white-space: normal;
+   border: 1px solid #2A3972;
+   color: black;
+   background: #E9EEF5;
+   font: normal 0.85em Arial, Helvetica, sans-serif;
+   text-align: left; }
+
+.vl-gecorr-totaal-score {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px; }
+.vl-gecorr-totaal-procentteken {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 15px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 15px 0px; }
+.vl-creden-tekst {
+   width: 530px;
+   font: italic normal 0.7em Arial, Helvetica, sans-serif;
+   text-align: left;
+   border: 1px solid black;
+   padding: 0.5em; }
+.helptext {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 0.5em 0px 0.8em 0px; }
+
+.invul-area { 
+   margin: 50px 20px 3px 40px; }
+.invul-help {
+   font: bold 13px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 14px 0px; }
+.invul-dropdown {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-invuller-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-invuller {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-header {
+   width: 170px;
+   font: bold 12px Arial, Helvetica, sans-serif; }
+.invul-inputtext {
+   font: normal 12px Arial, Helvetica, sans-serif; }
+.invul-contactambtenaar-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-contactambtenaar {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-correctie-help {
+   font: italic 12px Arial, Helvetica, sans-serif;
+   margin: 10px 0px 3px 0px;
+   padding: 0px 0px 0px 0px; }
+.invul-correctiefactor {
+   font: normal 12px Arial, Helvetica, sans-serif;
+   border: 0px solid #EFCD63;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 20px 10px 15px;
+   background-color: #F9EBC7; }
+.invul-submit { display: none; }
+.invul-submit-help { display: none;}
+.mail-melding { 
+   font: bold 13px Arial, Helvetica, sans-serif;
+   margin: 0px;
+   border 1px solid black;
+   clear: both; }
+.invulfout { 
+   font: normal 13px Arial, Helvetica, sans-serif;
+   margin: 0px;
+   border 1px solid black;
+   clear: both; }
+H1 { 
+   color: black;
+   font: bold 13px Arial, Helvetica, sans-serif; }
+H2 { 
+   color: black;
+   font: bold 13px Arial, Helvetica, sans-serif; }
+
+.ranglijst { 
+   font: normal normal 1em Arial, Helvetica, sans-serif; 
+   color: black;
+   clear: both;
+   width: 728px;
+   margin: 20px 0px 0px 0px;
+   padding: 0px 0px 0px 0px; }
+.ranglijst td {
+   padding: 0px 4px 0px 4px; 
+   border: 1px solid black;
+   vertical-align: middle; }
+.rang-gem-nummer{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 35px;
+   text-align: right;
+   vertical-align: top; }
+.rang-gem-naam{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black; 
+   width: 210px;
+   text-align: left;
+   vertical-align: top; }
+.rang-gem-balkje{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 230px;
+   text-align: left;
+   vertical-align: top; }
+.rang-gem-score{
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 47px;
+   text-align: right;
+   vertical-align: top; }
+
+.lijstje-provincie {
+   font: normal normal 1em Arial, Helvetica, sans-serif;
+   text-align: left;
+   width: 270px;
+   position: relative;
+   float: left;
+   border: none;
+   padding: 1.5em 0px 1em 0px;
+   margin: 47px 0px 0px 0px ; }
+.prov_naam {
+   font: bold 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 140px;
+   text-align: left;
+   white-space: nowrap;
+   vertical-align: top;
+   padding: 0px 20px 5px 10px; }
+.prov_score {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 20px 5px 0px; }
+.prov_deelname {
+   font: normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   width: 50px;
+   text-align: right;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.prov_onbekend {
+   font: italic 0.7em Arial, Helvetica, sans-serif; 
+   color: black;
+   text-align: center;
+   vertical-align: top;
+   padding: 0px 0px 5px 0px; }
+.provincie-gegevens { 
+   font: normal normal 0.8em Arial, Helvetica, sans-serif; 
+   color: black;
+   border: none;
+   clear: both;
+   width: 728px;
+   margin: 0px 0px 0px 0px;
+   padding: 1.5em 0px 1.5em 0px; }
+.credit-area { display: none;
+   clear: both;
+   font: normal normal 0.7em Arial, Helvetica, sans-serif; 
+   line-height: 1.3em;
+   color: black;
+   border: 0px dotted olive;
+   white-space: nowrap;
+   text-align: right; 
+   text-transform: none;
+   padding: 45px 0px 25px 0px;
+   margin: 0px 40px 0px 0px; }
+.credit-area a { color: black; }
+.credit-area a:hover { color: red; }
+
+.gemeentelinks {
+  display: none; }
+
+.antwoord-gemeentes {
+  display: none; }
+
+
+}
